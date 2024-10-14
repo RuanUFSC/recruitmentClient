@@ -14,7 +14,7 @@ export const useApiStore = defineStore('api', {
       }
       
       console.log(useAuthStore().getToken)
-      const dados = await $fetch('http://recruitmentapi.onrender.com/api/applications', {
+      const dados = await $fetch('https://recruitmentapi.onrender.com/api/applications', {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
