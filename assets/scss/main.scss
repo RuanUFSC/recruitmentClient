@@ -1,0 +1,95 @@
+/* 
+    Personalizando cores padrões do bootstrap.
+    Mais informações em: https://getbootstrap.com/docs/5.1/customize/sass/
+*/
+$primary: #0073ca;
+
+$font-family-base: "Inter", sans-serif;
+
+// create var called primaryColor
+$primaryColor: $primary;
+:root {
+  --primary-300: #1f87fa;
+  --primary-500: #2c64e4;
+  --light-200: #eceff4;
+  --light-300: #dee1e7;
+}
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 4,
+  7: $spacer * 5,
+  8: $spacer * 6,
+  9: $spacer * 7,
+  10: $spacer * 8,
+  11: $spacer * 9,
+  12: $spacer * 10,
+  13: $spacer * 11,
+  14: $spacer * 12,
+  15: $spacer * 13,
+  16: $spacer * 14,
+  17: $spacer * 15,
+  18: $spacer * 16,
+  19: $spacer * 17,
+  20: $spacer * 18,
+);
+
+// @import "@/assets/plugins/bootstrap-5.2.3/scss/bootstrap.scss";
+@import "@/node_modules/bootstrap/scss/bootstrap.scss";
+
+// Font awesome
+$fa-font-path: "@/node_modules/@fortawesome/fontawesome-free/webfonts";
+@import "@/node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "@/node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+@import "@/node_modules/@fortawesome/fontawesome-free/scss/regular.scss";
+@import "@/node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
+
+@import "@/node_modules/primevue/resources/themes/bootstrap4-light-blue/theme.css";
+
+// Adicional
+.bg-white {
+  background-color: #fff !important;
+}
+.bg-light-200 {
+  background-color: var(--light-200) !important;
+}
+.bg-light-300 {
+  background-color: var(--light-300) !important;
+}
+.btn-primary-500 {
+  background-color: var(--primary-500) !important;
+  border-color: var(--primary-500) !important;
+  color: #fff !important;
+}
+
+.btn-primary-500:hover,
+.btn-primary-500:focus {
+  background-color: var(--primary-300) !important;
+  border-color: var(--primary-300) !important;
+  color: #fff !important;
+}
+
+.btn-primary-300 {
+  background-color: var(--primary-300) !important;
+  border-color: var(--primary-300) !important;
+  color: #fff !important;
+}
+.btn-primary-300:hover,
+.btn-primary-300:focus {
+  background-color: var(--primary-500) !important;
+  border-color: var(--primary-500) !important;
+  color: #fff !important;
+}
+.bg-primary-300 {
+  background-color: var(--primary-300) !important;
+}
+
+.p-multiselect-items-wrapper ul, .p-multiselect-items-wrapper ol, .p-dropdown-items-wrapper ul, .p-dropdown-items-wrapper ol{
+  padding-left: 0;
+}
