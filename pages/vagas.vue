@@ -29,7 +29,7 @@
   
   const fetchJobs = async () => {
     try {
-      const response = await fetch('http://recruitmentapi.onrender.com/api/jobs', {
+      const response = await fetch('https://recruitmentapi.onrender.com/api/jobs', {
         headers: {
           'Authorization': 'Bearer ' + authStore.getToken,
         },
