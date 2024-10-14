@@ -40,7 +40,7 @@ const authStore = useAuthStore();
 const registerRecruiter = async (values) => {
   try {
     isSubmitting.value = true;
-    const response = await fetch('http://recruitmentapi.onrender.com/api/recruiters', {
+    const response = await fetch('https://recruitmentapi.onrender.com/api/recruiters', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
