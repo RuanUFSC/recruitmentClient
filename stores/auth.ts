@@ -24,7 +24,7 @@ export const useAuthStore = defineStore('auth', {
         };
         const translatedRole = roleTranslation[role] || role;
 
-        await $fetch('http://localhost:8000/api/register', {
+        await $fetch('http://recruitmentapi.onrender.com/api/register', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -45,7 +45,7 @@ export const useAuthStore = defineStore('auth', {
         this.usuario = user
         const token = await user.getIdToken()
         this.token = token
-        const situacao = await $fetch('http://localhost:8000/api/auth', {
+        const situacao = await $fetch('http://recruitmentapi.onrender.com/api/auth', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

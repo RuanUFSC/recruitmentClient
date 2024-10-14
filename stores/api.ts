@@ -14,7 +14,7 @@ export const useApiStore = defineStore('api', {
       }
       
       console.log(useAuthStore().getToken)
-      const dados = await $fetch('http://localhost:8000/api/applications', {
+      const dados = await $fetch('http://recruitmentapi.onrender.com/api/applications', {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -26,7 +26,7 @@ export const useApiStore = defineStore('api', {
     }
     // async login(credentials) {
     //   try {
-    //     const response = await axios.post('http://localhost:8000/api/auth', credentials);
+    //     const response = await axios.post('http://recruitmentapi.onrender.com/api/auth', credentials);
     //     this.user = response.data.user;
     //   } catch (error) {
     //     console.error('Login failed:', error);
@@ -34,7 +34,7 @@ export const useApiStore = defineStore('api', {
     // },
     // async fetchJobs() {
     //   try {
-    //     const response = await axios.get('http://localhost:8000/api/jobs');
+    //     const response = await axios.get('http://recruitmentapi.onrender.com/api/jobs');
     //     this.jobs = response.data;
     //   } catch (error) {
     //     console.error('Failed to fetch jobs:', error);
@@ -42,7 +42,7 @@ export const useApiStore = defineStore('api', {
     // },
     // async applyToJob(applicationData) {
     //   try {
-    //     await axios.post('http://localhost:8000/api/applications', applicationData);
+    //     await axios.post('http://recruitmentapi.onrender.com/api/applications', applicationData);
     //   } catch (error) {
     //     console.error('Application failed:', error);
     //   }
